@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome to Nadiatul Shazwani Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+
+    #nav-mobile{
+      display: none !important;
+    }
+
+    @media screen and (max-width: 600px) { 
+
+       #nav-mobile{
+        display: block !important;
+      }
+
+      #nav-web{
+        display: none !important;
+      }
+
+    }
+
+    /*footer{
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+    }*/
+
+
+    </style>
+  </head>
+<body class="w3-light-grey">
+
+
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+  <div class="w3-row-padding">
+
+    <div style="margin-bottom: 10px;">
+        <div class="w3-bar w3-teal w3-card">
+
+          <select class="w3-select w3-border" id="nav-mobile" name="option" onchange="linkHref(this.value)">
+
+              <option value="index">Home</option>
+              <option value="personal-summary">Personal Summary</option>
+              <option value="objective">Objective</option>
+              <option value="education" selected="">Education</option>
+              <option value="extra-curricular">Extra Curricular</option>
+              <option value="award">Awards</option>
+              <option value="work-experience">Working Experience</option>
+              <option value="references">References</option>
+
+          </select>
+          <div id="nav-web">
+            <a href="index.html" class="w3-bar-item w3-button">Home</a>
+            <a href="personal-summary.html" class="w3-bar-item w3-button">Personal Summary</a>
+            <a href="objective.html" class="w3-bar-item w3-button">Objective</a>
+            <a href="education.html" class="w3-bar-item w3-button">Eduction</a>
+            <a href="extra-curricular.html" class="w3-bar-item w3-button">Extra Curricular</a>
+            <a href="award.html" class="w3-bar-item w3-button">Awards</a>
+            <a href="work-experience.html" class="w3-bar-item w3-button">Working Experience</a>
+            <a href="references.html" class="w3-bar-item w3-button">References</a>
+          </div>
+        </div>
+    </div>
+  </div>
+
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+  
+    
+
+    <!-- Right Column -->
+    <div class="w3-row">
+    
+      <div class="w3-container w3-white">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Bachelor in Business Administration (Hons) Islamic Banking at Universiti Teknologi MARA (UiTM) Kota Bharu, Kelantan</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>March 2021 — Present</h6>
+          <p>Currently in Semester 4</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Diploma in Accountancy at Universiti Teknologi MARA (UiTM) Jengka, Pahang</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>July 2018 — January 2021</h6>
+          <p>C.G.P.A: 3.51</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Non-science stream (Accountancy)at Sekolah Menengah Kebangsaan Sultan Abu Bakar, Kuantan</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>January 2013 — December 2017</h6>
+          <p>Sijil Pelajaran Malaysia (S.P.M), 5A 2A- 1B 1D: A- for Prinsip Akaun</p><br>
+        </div>
+      </div>
+
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+<!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+<footer class="w3-container w3-teal w3-center w3-margin-top">
+  <p>Copyright by Nadiatul Shazwani Atan © 2022</p>
+ 
+ <!-- End footer -->
+ </footer>
+
+</body>
+<script>
+    function linkHref(value) {
+        window.location.replace(`${value}.html`);
+    }
+</script>
+</html>

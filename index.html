@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome to Nadiatul Shazwani Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+
+    #nav-mobile{
+      display: none !important;
+    }
+
+    @media screen and (max-width: 600px) { 
+
+       #nav-mobile{
+        display: block !important;
+      }
+
+      #nav-web{
+        display: none !important;
+      }
+
+    }
+
+    
+
+
+    </style>
+  </head>
+<body class="w3-light-grey">
+
+
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+  <div class="w3-row-padding">
+
+    <div style="margin-bottom: 10px;">
+        <div class="w3-bar w3-teal w3-card">
+
+          <select class="w3-select w3-border" id="nav-mobile" name="option" onchange="linkHref(this.value)">
+
+              <option value="index" selected="">Home</option>
+              <option value="personal-summary">Personal Summary</option>
+              <option value="objective">Objective</option>
+              <option value="education">Education</option>
+              <option value="extra-curricular">Extra Curricular</option>
+              <option value="award">Awards</option>
+              <option value="work-experience">Working Experience</option>
+              <option value="references">References</option>
+
+          </select>
+          <div id="nav-web">
+            <a href="index.html" class="w3-bar-item w3-button">Home</a>
+            <a href="personal-summary.html" class="w3-bar-item w3-button">Personal Summary</a>
+            <a href="objective.html" class="w3-bar-item w3-button">Objective</a>
+            <a href="education.html" class="w3-bar-item w3-button">Eduction</a>
+            <a href="extra-curricular.html" class="w3-bar-item w3-button">Extra Curricular</a>
+            <a href="award.html" class="w3-bar-item w3-button">Awards</a>
+            <a href="work-experience.html" class="w3-bar-item w3-button">Working Experience</a>
+            <a href="references.html" class="w3-bar-item w3-button">References</a>
+          </div>
+        </div>
+    </div>
+  </div>
+
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+  
+    <div class="w3-third">
+       <div class="w3-white w3-text-grey w3-card-4">
+          <div class="w3-display-container">
+            <img src="https://nadiatulshazwaniatan.w3spaces.com/nadiaphoto.jpeg" style="width:100%" alt="Avatar">
+            <div class="w3-display-bottomcenter w3-container w3-text-black">
+              <h2>Nadiatul Shazwani Atan</h2>
+            </div>
+          </div>
+          <div class="w3-container">
+            <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Bukit Galing Kem, Cawangan Pengankutan BN 7 PGA, 25990 Kuantan, Pahang.</p>
+            <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>nadiatulshazwani.atan@gmail.com</p>
+            <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>017-9528781</p>
+          </div>
+        </div>
+
+    </div>
+    <div class="w3-twothird">
+
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/H_hgw-V-wBI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      
+      </div>
+      
+    </div>
+
+   
+
+
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+<!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+<footer class="w3-container w3-teal w3-center w3-margin-top">
+  <p>Copyright by Nadiatul Shazwani Atan © 2022</p>
+ 
+ <!-- End footer -->
+ </footer>
+
+</body>
+<script>
+    function linkHref(value) {
+        window.location.replace(`${value}.html`);
+    }
+</script>
+</html>
